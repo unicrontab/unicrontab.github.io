@@ -8,7 +8,7 @@ const ProjectContainer = styled.div`
     grid-template-columns: auto auto auto;
     width: calc(100vw);
     height: calc(50vh);
-    color: rgba(255,255,255,0.7);
+    color: var(--text-color);
     justify-content: center;
 
 

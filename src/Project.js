@@ -8,12 +8,16 @@ const ProjectContainer = styled.div`
     margin: calc(2rem);
     max-width: calc(50vw);
     grid-template-columns: auto auto;
-    background-color: rgba(0,0,0,0.5);
+    background-color: var(--background);
     justify-items: center;
-    
+    border-radius: 8px;
+    --date-color: var(--text-color);
 
     &:hover {
-        background-color: rgba(0,0,0,0.8);
+        --date-color: var(--text-accent-color);
+        color: var(--text-color-bright);
+        background-color: var(--background-dark);
+        box-shadow: 10px 10px 0px 0px rgba(--background);
     }
 `;
 
@@ -34,10 +38,11 @@ const Links = styled.div`
 const Link = styled.a`
     text-align: center;
     width: calc(4vw);
-    fill: rgba(0,255,255,0.5);
+    fill: var(--text-accent-color-light);
+    padding: 0 20px;
 
     &:hover {
-        fill: rgba(0,255,255,0.7);
+        fill: var(--text-accent-color);
         width: calc(4.1vw);
     }
 `;
@@ -49,6 +54,7 @@ const Description = styled.p`
 
 const DateBadge = styled.div`
     background-color: rgba(255,255,255,0.2);
+    color: var(--date-color);
     padding: 2px;
     position: absolute;
     width: inherit;
