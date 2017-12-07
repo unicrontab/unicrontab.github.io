@@ -7,8 +7,8 @@ import * as theme from './theme';
 
 injectGlobal`
     body {
-        --dot-spacing: 15px;
-        --dot-size: 2px;
+        --dot-spacing: 8px;
+        --dot-size: 1px;
         --background: ${theme.background};
         --background-dark: ${theme.backgroundDark};
         --background-light: ${theme.backgroundLight};
@@ -22,9 +22,9 @@ injectGlobal`
         font-family: ${theme.font};
         background: 
           radial-gradient(var(--background) 15%, transparent 20%) 1px 1px, 
-            radial-gradient(var(--background) 25%, transparent 8%) 1px 1px, 
-              radial-gradient(var(--background-light) 15%, transparent 30%) var(--dot-size) var(--dot-size), 
-                radial-gradient(var(--background-light) 15%, transparent 30%) var(--dot-size) var(--dot-size);
+            radial-gradient(var(--background) 15%, transparent 20%) 1px 1px, 
+              radial-gradient(var(--background-light) 15%, transparent 40%) var(--dot-size) var(--dot-size), 
+                radial-gradient(var(--background-light) 15%, transparent 40%) var(--dot-size) var(--dot-size);
         background-color: #282828;
         background-size: var(--dot-spacing) var(--dot-spacing);
     }
