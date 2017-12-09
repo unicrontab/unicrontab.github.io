@@ -5,7 +5,7 @@ import vendors from './vendors.png';
 import qwertydvorak from './qwertydvorak.jpg';
 import profithash1 from './Dashboard.PNG';
 import profithash2 from './AccountSettings.PNG';
-import profithash3 from './'
+import profithash3 from './Workers.PNG';
 
 export default [
     {
@@ -103,8 +103,8 @@ export default [
         users globally and was frequently the most profitable auto-switching pool site
         measured from external sources.
 
-        After bitcoin started dropping in price (ha ha) instead of just breaking even, I 
-        called it quits.
+        After bitcoin started dropping in price (ha ha) instead of sticking it out,
+        I left while I was ahead. Luckily I held on to all the BTC!
         `,
     },
     {
