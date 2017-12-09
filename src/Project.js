@@ -13,6 +13,11 @@ const ProjectContainer = styled.div`
     border-radius: 8px;
     --date-color: var(--text-color);
 
+    @media (max-width: 500px) {
+        margin: calc(1rem);
+        max-width: calc(90vw);
+    }
+
     &:hover {
         --date-color: var(--text-accent-color);
         color: var(--text-color-bright);

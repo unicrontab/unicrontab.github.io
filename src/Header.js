@@ -12,18 +12,24 @@ const HeaderWrapper = styled.div`
     justify-content: center;
 `;
 
+const bulger = keyframes`
+    0%, 100% {
+        transform: translateY(calc(-0.5vh));
+    }
+    50% {
+        transform: translateY(calc(0.5vh));
+    }
+`;
+
 const HeaderTitle = styled.h1`
     color: var(--text-accent-color);
     font-size: 2em;
-`;
+    animation: ${bulger} 2s ease-in-out infinite;
 
-const bulger = keyframes`
-    0% {
-        font-size: 1em;
+    @media (max-width: 500px) {
+        font-size: 1.5em;
     }
-    100% {
-        font-size: 2.2em;
-    }
+
 `;
 
 const Accent = styled.span`
@@ -31,7 +37,6 @@ const Accent = styled.span`
     color: var(--text-accent-color);
     font-size: 2.5em;
     font-weight: 100;
-    animation: ${bulger} 1s ease-out;
 `;
 
 const HeaderSubtitle = styled.a`
