@@ -1,4 +1,11 @@
 {
-  "main.js": "static/js/main.2c440b85.js",
-  "main.js.map": "static/js/main.2c440b85.js.map"
+  "main.js": "static/js/main.86fe10bc.js",
+  "main.js.map": "static/js/main.86fe10bc.js.map",
+  "static/media/AccountSettings.PNG": "static/media/AccountSettings.31b87c5b.PNG",
+  "static/media/Dashboard.PNG": "static/media/Dashboard.65580923.PNG",
+  "static/media/gogogo.png": "static/media/gogogo.f3faa830.png",
+  "static/media/map-cluster.png": "static/media/map-cluster.2ca134e1.png",
+  "static/media/monty-hall.png": "static/media/monty-hall.db50a853.png",
+  "static/media/qwertydvorak.jpg": "static/media/qwertydvorak.ab7c36b4.jpg",
+  "static/media/vendors.png": "static/media/vendors.578a7b8d.png"
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { extend } from 'styled-components';
 import { githubIcon, webIcon } from './icons';
 
 const ProjectContainer = styled.div`
@@ -31,7 +31,7 @@ const Links = styled.div`
     display: grid;
     grid-template-columns: auto auto;
     grid-column: 1 / span 2;
-    grid-row: 2;
+    grid-row: 3;
     justify-items: center;
 `;
 
@@ -49,7 +49,7 @@ const Link = styled.a`
 
 const Description = styled.p`
     grid-column: 1 / span 2;
-    grid-row: 3;
+    grid-row: 4;
 `;
 
 const DateBadge = styled.div`
@@ -66,11 +66,46 @@ const createLink = (url, icon) => {
     return <Link href={url}>{icon}</Link>;
 };
 
+// const ProjectImage = ({ className, image }) => {
+//     if (!image) return null;
+//     return (<img className={className} alt={image} src={image} />);
+// };
+
+// const StyledImage = styled(ProjectImage)`
+//     grid-row: 2;
+//     padding: 10px;
+//     grid-column: 1 / span 2;
+//     max-width: 100%;
+//     opacity: 0.8;
+
+//     &:hover {
+//         opacity: 1.0;
+//     }
+// `;
+
+const row = 2;
+const StyledImage = styled.img([`
+    grid-row: ${row};
+    padding: 10px;
+    grid-column: 1 / span 2;
+    max-width: 100%;
+    opacity: 0.8;
+
+    &:hover {
+        opacity: 1.0;
+    }
+`]);
+
+const ProjectImage = ({ image }) => {
+    if (!image) return null;
+    return (<StyledImage alt={image} src={image} />);
+};
 
 const Project = props => (
     <ProjectContainer>
         <DateBadge>{props.project.date}</DateBadge>
         <ProjectTitle>{props.project.name}</ProjectTitle>
+        <ProjectImage alt={props.project.date} image={props.project.image} />
         <Links>
             {createLink(props.project.url, webIcon)}
             {createLink(props.project.source, githubIcon)}
