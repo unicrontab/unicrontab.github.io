@@ -10,7 +10,7 @@ const HeaderWrapper = styled.div`
     background-color: var(--background);
     color: white;
     padding-bottom: calc(1vh);
-    justify-content: center;
+    justify-content: stretch;
 `;
 
 const bulger = keyframes`
@@ -48,7 +48,6 @@ const HeaderSubtitle = styled.a`
 `;
 
 const LinkWrapper = styled.div`
-    width: calc(100vw);
     height: calc(5vh);
 `;
 

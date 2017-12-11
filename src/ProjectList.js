@@ -6,7 +6,7 @@ import projectData from './projectData';
 const ProjectContainer = styled.div`
     display: grid;
     grid-template-columns: auto auto auto;
-    width: calc(100vw);
+    width: 100%;
     height: calc(50vh);
     color: var(--text-color);
     justify-content: center;

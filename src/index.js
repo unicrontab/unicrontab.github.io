@@ -16,6 +16,7 @@ injectGlobal`
         --text-accent-color: ${theme.textAccentColor};
         --text-accent-color-light: ${theme.textAccentColorLight};
         --text-color-bright: ${theme.textColorBright};
+        width: 100%;
 
         margin: 0px;
         padding: 0px;
