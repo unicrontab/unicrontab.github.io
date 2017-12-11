@@ -6,6 +6,9 @@ import styled from 'styled-components';
 
 const AppWrapper = styled.div`
     text-align: center;
+    display: grid;
+    margin: 0px;
+    padding: 0px;
 `;
 
 const App = () => (

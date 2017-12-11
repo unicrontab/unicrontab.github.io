@@ -1,14 +1,15 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import linkData from './linkData';
+import Links from 'my-links';
 
 const githubUrl = 'https://github.com/unicrontab';
 
 const HeaderWrapper = styled.div`
     display: grid;
     background-color: var(--background);
-    height: 150px;
-    padding: 20px;
     color: white;
+    padding-bottom: calc(1vh);
     justify-content: center;
 `;
 
@@ -43,10 +44,23 @@ const HeaderSubtitle = styled.a`
     color: var(--text-accent-color-light);
     font-size: 1.2em;
     font-weight: 100;
+    height: calc(5vh);
 `;
+
+const LinkWrapper = styled.div`
+    width: calc(100vw);
+    height: calc(5vh);
+`;
+
+const StyledLinks = () => (
+    <LinkWrapper>
+        <Links data={linkData} color="rgba(0,255,255,0.8)" />
+    </LinkWrapper>
+);
 
 const Header = () => (
     <HeaderWrapper>
+        <StyledLinks data={linkData} color="rgba(0,255,255,0.8)" />
         <HeaderTitle>
             <Accent>[</Accent>
                 Michael Wilson

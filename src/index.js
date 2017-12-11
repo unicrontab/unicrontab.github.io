@@ -17,8 +17,8 @@ injectGlobal`
         --text-accent-color-light: ${theme.textAccentColorLight};
         --text-color-bright: ${theme.textColorBright};
 
-        margin: 0;
-        padding: 0;
+        margin: 0px;
+        padding: 0px;
         font-family: ${theme.font};
         background: 
           radial-gradient(var(--background) 15%, transparent 20%) 1px 1px, 
