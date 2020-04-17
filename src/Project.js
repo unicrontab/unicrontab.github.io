@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { extend } from 'styled-components';
+import styled from 'styled-components';
 import { githubIcon, webIcon } from './icons';
 
 const ProjectContainer = styled.div`
@@ -17,7 +17,7 @@ const ProjectContainer = styled.div`
         margin: calc(1rem);
         max-width: calc(90vw);
     }
-
+o
     &:hover {
         --date-color: var(--text-accent-color);
         color: var(--text-color-bright);

@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const IntroWrapper = styled.div`
+const HeaderWrapper = styled.div`
     padding: calc(4rem);
     color: var(--text-color);
 `;
 
-const Intro = () => (
-    <IntroWrapper>
+const Header = () => (
+    <HeaderWrapper>
         ... a collection of projects and ideas ...
-    </IntroWrapper>
+    </HeaderWrapper>
 );
 
-export default Intro;
+export default Header;

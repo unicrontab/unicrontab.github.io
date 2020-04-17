@@ -21,13 +21,14 @@ injectGlobal`
         margin: 0px;
         padding: 0px;
         font-family: ${theme.font};
-        background: 
+        background-color: #222222;
+        /* background: 
           radial-gradient(var(--background) 15%, transparent 20%) 1px 1px, 
             radial-gradient(var(--background) 15%, transparent 20%) 1px 1px, 
               radial-gradient(var(--background-light) 15%, transparent 40%) var(--dot-size) var(--dot-size), 
                 radial-gradient(var(--background-light) 15%, transparent 40%) var(--dot-size) var(--dot-size);
         background-color: #282828;
-        background-size: var(--dot-spacing) var(--dot-spacing);
+        background-size: var(--dot-spacing) var(--dot-spacing); */
     }
 `;
 
