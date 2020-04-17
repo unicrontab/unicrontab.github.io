@@ -17,7 +17,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://unicrontab.github.io/",
+  "homepage": "https://unicrontab.github.io/build",
   "devDependencies": {
     "gh-pages": "^1.1.0"
   }
