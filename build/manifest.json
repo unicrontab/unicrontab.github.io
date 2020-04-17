@@ -8,7 +8,8 @@
       "type": "image/x-icon"
     }
   ],
-  "start_url": "https://unicrontab.github.io/build/index.html",
+  // "start_url": "https://unicrontab.github.io/build/index.html",
+  "start_url": "http://127.0.0.1:8000/build/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

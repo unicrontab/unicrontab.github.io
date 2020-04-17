@@ -52,6 +52,7 @@ const Projects = styled.div`
 
 const Splash = withRouter(({history}) => (
     <SplashWrapper>
+        {console.log('Loaded Splash!')}
         <IconWrapper>
             <Icon src={mw} />
             <Name>
